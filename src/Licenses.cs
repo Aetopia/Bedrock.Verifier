@@ -16,6 +16,8 @@ static class Licenses
 
     internal static async Task<bool> GetAsync()
     {
+        await LicenseManager.RefreshLicensesAsync(LicenseRefreshOption.AllLicenses);
+
         using var stream = await Client.OpenReadTaskAsync(Address);
         using var reader = JsonReaderWriterFactory.CreateJsonReader(stream, XmlDictionaryReaderQuotas.Max);
         var element = XElement.Load(reader);
