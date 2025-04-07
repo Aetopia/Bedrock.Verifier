@@ -8,6 +8,8 @@
     <ApplicationManifest>Resources\.manifest</ApplicationManifest>
     <Optimize>true</Optimize>
     <PublishRelease>true</PublishRelease>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <ItemGroup>
